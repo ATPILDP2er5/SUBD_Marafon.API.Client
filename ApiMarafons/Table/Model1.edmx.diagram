@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9373bfcb1d82429b9185fff7ec862dcf" Name="Diagram1">
+        <EntityTypeShape EntityType="MARAFON_DBModel.MARAFON" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARAFON_DBModel.MARAFON_UCHASTIE" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARAFON_DBModel.SPORTMENS" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARAFON_DBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARAFON_DBModel.TYPE" Width="1.5" PointX="7.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARAFON_DBModel.users" Width="1.5" PointX="4.625" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MARAFON_DBModel.ZRITELI" Width="1.5" PointX="8" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="MARAFON_DBModel.FK_users_TYPE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

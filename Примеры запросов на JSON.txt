@@ -1,0 +1,92 @@
+http://localhost:5000/api/auth/register
+Спортсмен
+{
+    "Login": "new_athlete",
+    "Password": "secure_password",
+    "Type": 1,
+    "Fam": "Иванов",
+    "Name": "Иван",
+    "Otch": "Иванович",
+    "Birthdate": "1990-01-01",
+    "Gender": 0,
+    "Country": "Russia"
+}
+Зритель
+{
+    "Login": "new_spectator",
+    "Password": "secure_password",
+    "Type": 2,
+    "Fam": "Петров",
+    "Name": "Петр",
+    "Otch": "Петрович",
+    "Email": "petr@example.com",
+    "Phone": "234567890"
+}
+#### Авторизация пользователя
+
+Метод: POST  
+URL: http://localhost:5000/api/auth/login  
+Тело запроса:
+JSON
+
+{
+    "Login": "your_login",
+    "Password": "your_password"
+}
+### MarathonsController (Марафоны)
+
+#### Получение списка всех марафонов
+
+Метод: GET  
+URL: http://localhost:5000/api/marathons
+
+#### Получение информации о конкретном марафоне
+
+Метод: GET  
+URL: http://localhost:5000/api/marathons/{id}  
+Пример: http://localhost:5000/api/marathons/1
+
+### AthletesController (Спортсмены)
+
+#### Получение информации о спортсмене
+
+Метод: GET  
+URL: http://localhost:5000/api/athletes/{id}  
+Пример: http://localhost:5000/api/athletes/1
+
+#### Запись спортсмена на марафон
+
+Метод: POST  
+URL: http://localhost:5000/api/athletes/register  
+Тело запроса:
+JSON
+
+{
+    "MarathonId": 1,
+    "AthleteId": 123
+}
+
+#### Отмена записи на марафон
+
+Метод: DELETE  
+URL: http://localhost:5000/api/athletes/unregister  
+Тело запроса:
+JSON
+
+{
+    "MarathonId": 1,
+    "AthleteId": 123
+}
+
+### SpectatorsController (Зрители)
+
+#### Получение информации о зрителе
+
+Метод: GET  
+URL: http://localhost:5000/api/spectators/{id}  
+Пример: http://localhost:5000/api/spectators/1
+
+#### Получение списка всех марафонов и спортсменов, записанных на них
+
+Метод: GET  
+URL: http://localhost:5000/api/spectators/marathons

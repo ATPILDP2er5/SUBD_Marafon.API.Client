@@ -1,0 +1,58 @@
+﻿@model ApiMarafons.Table.ZRITELI
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ZRITELI</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fam)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fam)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.otch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.otch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.e_mail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.e_mail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.number_phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.number_phone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
